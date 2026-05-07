@@ -215,6 +215,8 @@ Harness components organized by the problem they solve, not by vendor.
 - [Graph-Native Cognitive Memory for AI Agents: Formal Belief Revision Semantics for Versioned Memory Architectures](https://arxiv.org/abs/2603.17244) — Formal semantics for versioned memory graphs with belief revision operations, enabling agents to maintain coherent evolving world models through multi-turn reasoning. Addresses the hard problem of inconsistency resolution in long-lived agent memory: when new information contradicts prior beliefs, how should the agent update its knowledge base?
 - [Continual learning for AI agents](https://blog.langchain.com/continual-learning-for-ai-agents/) — LangChain's April 2026 framing of agent learning as three distinct layers: model weights, harness behavior, and contextual memory. Essential for designing memory systems that don't just store facts but actually improve agent performance over time through trace-driven harness and context updates.
 
+- [Dakera](https://github.com/Dakera-AI/dakera-mcp) — Rust-native persistent agent memory with 83 MCP tools for store, recall, hybrid BM25+vector search, knowledge graphs, and cross-agent memory sharing. The decay-weighted importance scoring system automates staleness management at the memory layer rather than requiring harness-level eviction policies — memories naturally fade unless reinforced. Self-hosted via Docker or `cargo install dakera-mcp`; zero external model dependencies. ![Stars](https://img.shields.io/github/stars/Dakera-AI/dakera-mcp?style=flat-square&label=★&color=yellow)
+
 ### Task Runners & Orchestration
 
 - [Harness Engineering](https://openai.com/index/harness-engineering/) — How task runners fit into the harness: queueing, parallelism, and progress reporting.
