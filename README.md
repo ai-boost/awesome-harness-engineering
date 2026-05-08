@@ -4,6 +4,9 @@
   <p>Curated resources, patterns, and templates for building reliable AI agent harnesses.</p>
   <p>
     <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+
+- [OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor): Real-time monitoring dashboard for OpenClaw AI agents — tracks sessions, token usage, message trends with Vue 3 + WebSocket.
+
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0-lightgrey.svg" alt="License: CC0"></a>
     <a href="https://github.com/ai-boost/awesome-harness-engineering/stargazers"><img src="https://img.shields.io/github/stars/ai-boost/awesome-harness-engineering?style=social" alt="GitHub Stars"></a>
     <a href="https://github.com/ai-boost/awesome-harness-engineering/network/members"><img src="https://img.shields.io/github/forks/ai-boost/awesome-harness-engineering?style=social" alt="GitHub Forks"></a>
