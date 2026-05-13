@@ -203,6 +203,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Memory & State
 
+- [Akephalos](https://github.com/sunnja69/akephalos) — Local-first markdown passport for AI agents: carries non-secret preferences, tools, rules, project context, and memories across coding agents and MCP-compatible clients via plain files/Git. ![Stars](https://img.shields.io/github/stars/sunnja69/akephalos?style=flat-square&label=★&color=yellow)
 - [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — Covers in-context, external, and procedural memory patterns as harness-level concerns.
 - [Letta (MemGPT)](https://github.com/letta-ai/letta) — The reference architecture for stateful agents: three-tier memory (core / archival / recall) maps directly to harness state management design. Their [agent loop redesign post](https://www.letta.com/blog/letta-v1-agent) is the most thorough public analysis of how memory structure shapes the harness. ![Stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=★&color=yellow)
 - [mem0](https://github.com/mem0ai/mem0) — Drop-in universal memory layer (YC-backed, AWS Agent SDK's exclusive memory provider) that handles cross-session retention without custom harness-level state management code. Lowest integration cost for production-grade persistent memory. ![Stars](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=★&color=yellow)
