@@ -318,6 +318,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 Real repositories worth studying — each with a note on *why* it's worth your time.
 
+- [agent-harness](https://github.com/ar27111994/agent-harness) — Reproducible supply-chain lifecycle for reusable coding-agent assets: authority-ranked discovery, pinned mirror locks, quarantine routing, staged activation, and host-specific wire-in across OpenCode and other hosts. ![Stars](https://img.shields.io/github/stars/ar27111994/agent-harness?style=flat-square&label=★&color=yellow)
 ### Tutorials & Educational
 
 - [Learn Harness Engineering](https://walkinglabs.github.io/learn-harness-engineering/en/) — A project-based course on designing the environments, state, verification, and control systems that make Codex and Claude Code reliable. The most approachable public curriculum for learning harness engineering from first principles — each module builds a working artifact rather than summarizing concepts. ![Stars](https://img.shields.io/github/stars/walkinglabs/learn-harness-engineering?style=flat-square&label=★&color=yellow)
