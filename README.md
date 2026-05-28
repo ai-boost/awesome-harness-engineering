@@ -195,6 +195,11 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Permissions & Authorization
 
+
+- **[AgentGate](https://github.com/ElamOlame31/agentgate-public)** - Pre-execution authorization PDP for AI agent harnesses. 4D trust scoring, 24h kill chain detection, Merkle audit trail. MIT licensed, drop-in with LangGraph.
+https://www.tryagentgate.com/
+
+
 - [Beyond Permission Prompts](https://www.anthropic.com/engineering/beyond-permission-prompts) — Structured authorization patterns for agents: how to give agents the right permissions without relying on prompt-level trust.
 - [OWASP LLM06:2025 — Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) — OWASP's authoritative definition of the "excessive agency" risk: over-provisioned functions, unnecessary permissions, and missing approval mechanisms. The standard checklist for auditing harness permission scope against principle of least privilege.
 - [GitHub Enterprise — Governing Agents](https://wellarchitected.github.com/library/governance/recommendations/governing-agents/) — April 2026 GitHub official guide for enterprise agent governance: MCP server registry curation with ruleset-protected configurations, agent environment standardization via `copilot-setup-steps.yml`, ephemeral runner enforcement, and cloud-agent firewall allowlisting. The most concrete published reference for governing agent fleets at scale without creating bottlenecks.
@@ -397,6 +402,12 @@ Real repositories worth studying — each with a note on *why* it's worth your t
 ---
 
 ## Security, Sandbox & Permissions
+
+
+- **[AgentGate](https://github.com/ElamOlame31/agentgate-public)** - Pre-execution authorization PDP for AI agent harnesses. 4D trust scoring, 24h kill chain detection, Merkle audit trail. MIT licensed, drop-in with LangGraph.
+https://www.tryagentgate.com/
+
+
 
 - [Beyond Permission Prompts](https://www.anthropic.com/engineering/beyond-permission-prompts) — The authoritative resource on moving from prompt-level permission grants to structured authorization in the harness.
 - [Model Context Protocol — Authorization](https://modelcontextprotocol.io/specification/2025-11-05/basic/authorization) — MCP's specification for OAuth-based authorization flows when agents access external services.
