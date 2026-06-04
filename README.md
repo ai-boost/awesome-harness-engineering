@@ -45,6 +45,7 @@ This list focuses on the *harness*, not the model. Every component here exists b
   - [👁️ Observability & Tracing](#observability--tracing)
   - [🐛 Debugging & Developer Experience](#debugging--developer-experience)
   - [🧑‍💼 Human-in-the-Loop](#human-in-the-loop)
+  - [🔄 Contract Drift & Entropy Management](#contract-drift--entropy-management)
 - [🔍 Reference Implementations](#reference-implementations)
   - [🎓 Tutorials & Educational](#tutorials--educational)
   - [🏭 Generators & Meta-Harnesses](#generators--meta-harnesses)
@@ -326,6 +327,12 @@ Harness components organized by the problem they solve, not by vendor.
 - [Humans and Agents in Software Engineering Loops](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) — Martin Fowler defines three human-involvement postures — humans outside, in, or on the agent loop — and argues that "humans on the loop" (maintaining the harness rather than reviewing individual outputs) is the only approach that scales with agent throughput. The "agentic flywheel" section — where agents are directed to evaluate results and recommend harness improvements — is the clearest articulation of how HITL evolves from a gate into a feedback mechanism.
 - [Measuring AI Agent Autonomy in Practice](https://www.anthropic.com/news/measuring-agent-autonomy) — Anthropic's February 2026 empirical study of millions of real-world Claude Code interactions. Key finding: experienced users shift from per-action approval (20% auto-approve when new) to intervention-only oversight (40% auto-approve at 750+ sessions), and agent-initiated clarification stops grow faster than human interruptions as task complexity increases. The most data-grounded reference for designing adaptive permission models that scale with user trust.
 - [AutoResearchClaw HITL Co-Pilot](https://github.com/aiming-lab/AutoResearchClaw) — April 2026 open-source human-in-the-loop system with six intervention modes (full-auto, gate-only, checkpoint, step-by-step, co-pilot, custom), SmartPause confidence-driven dynamic suspension, and Intervention Learning from human corrections. The cost-guardrail system — aborting runs that exceed budget thresholds — makes it a practical reference for production HITL where human time is as constrained as agent compute.
+
+### Contract Drift & Entropy Management
+
+Tools that detect and repair stale references when agent contracts, schemas, or prompts change — preventing silent runtime failures and documentation drift.
+
+- [Agent Contract Drift Sweeper](https://github.com/Rob-Claw/agent-contract-drift-sweeper) — Log a schema or prompt change, scan for stale references across prompts, API routes, docs, and UI, and drive a triage-ready cleanup checklist before production drifts. ![Stars](https://img.shields.io/github/stars/Rob-Claw/agent-contract-drift-sweeper?style=flat-square&label=★&color=yellow)
 
 ---
 
