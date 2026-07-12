@@ -523,6 +523,24 @@ Reusable starting points for harness artifacts. Copy and adapt.
 | [`templates/IMPLEMENT.md`](templates/IMPLEMENT.md) | Implementation log: decisions, deviations, open questions |
 | [`templates/HARNESS_CHECKLIST.md`](templates/HARNESS_CHECKLIST.md) | Review checklist before shipping a harness to production |
 
+### Project-side harness (repo-local deterministic control)
+
+A complementary pattern to agent-side harness: artifacts that live **inside** a project repo and enforce the *same* conventions on every agent working there — architecture layering, dependency mocks, change-triggered unit tests, and approved fixtures. Operationalizes Fowler's "regulates three" (Maintainability / Architecture fitness / Behaviour) at the project level. Unlike agent-side loop wrappers (global hooks, evals, guards), project-side artifacts are checked into the repo and run via git pre-commit and/or a repo-local `eval.sh` that chains the sensors below.
+
+Key components and their upstream anchors:
+
+| Component | What it enforces | Related upstream entries |
+|---|---|---|
+| `ARCHITECTURE.md` | Layering + allowed dependency direction + forbidden cross-layer imports | [Architecture fitness](https://martinfowler.com/articles/harness-engineering.html); [Choosing the Right Multi-Agent Architecture](https://blog.langchain.com/choosing-the-right-multi-agent-architecture/) |
+| `drift-scan.sh` + `drift-rules.json` | Architecture-fitness sensor: scans for drift against layered rules (the "janitor army") | [Architecture fitness harness](https://martinfowler.com/articles/harness-engineering.html); [statewright](https://github.com/statewright/statewright) |
+| `mocks/` | Deterministic mocks + generators for external deps (DB, APIs, cloud), so agents never hit live services | [Writing Effective Tools for Agents](https://www.anthropic.com/engineering/writing-effective-tools-for-agents); [SkillTester](https://arxiv.org/abs/2603.28815) |
+| `fixtures/` | Approved golden fixtures for eval comparison; prevents behaviour drift | [Behaviour harness](https://martinfowler.com/articles/harness-engineering.html); [LLM Readiness Harness](https://arxiv.org/abs/2603.27355) |
+| `lint.sh` | Project-specific linter rules (not generic) | [Maintainability harness](https://martinfowler.com/articles/harness-engineering.html); [Tool Annotations as Risk Vocabulary](https://blog.modelcontextprotocol.io/posts/2026-03-16-tool-annotations/) |
+| `test-trigger.sh` | Runs affected unit tests (bounded timeout) automatically after edits | [LLM Readiness Harness](https://arxiv.org/abs/2603.27355); [Demystifying Evals](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) |
+| `eval.sh` | Orchestrator that chains drift-scan + lint + fixtures + test-trigger; exit 0 = pass | [HARNESS_CHECKLIST.md](templates/HARNESS_CHECKLIST.md); [LLM Readiness Harness](https://arxiv.org/abs/2603.27355) |
+
+Enforcement model: repo-local git `pre-commit` (hard gate) and/or an `AGENT.md` directive (soft, always-on even without git). Crucially, sensors must **pass on empty rules** (skip + warn) rather than fail-by-default, so agents can fill them in incrementally per project — no one-size-fits-all template, since an image backend and a math backend need different mocks, tests, and drift rules.
+
 ---
 
 ## Production Infrastructure & Operations
