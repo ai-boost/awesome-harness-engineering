@@ -62,6 +62,7 @@ This list focuses on the *harness*, not the model. Every component here exists b
 
 Canonical essays that define what harness engineering is and why it matters.
 
+- [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI pentest platform and MCP host, covering web, API, Active Directory and Kubernetes, with proof of exploitation.
 - [Harness Engineering](https://openai.com/index/harness-engineering/) — OpenAI's framing of harness engineering as a discipline: how to design the scaffolding that lets Codex and similar agents operate reliably in an agent-first world.
 - [Unrolling the Codex Agent Loop](https://openai.com/index/unrolling-the-codex-agent-loop/) — OpenAI's detailed breakdown of the Codex agent loop, exposing each harness component and where it can be improved.
 - [Run Long-Horizon Tasks with Codex](https://developers.openai.com/blog/run-long-horizon-tasks-with-codex/) — OpenAI's practice guide for long-horizon task planning: introduces Plan.md, Implement.md, Documentation.md as reusable harness artifacts.
