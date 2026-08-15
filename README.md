@@ -591,7 +591,9 @@ Reusable starting points for harness artifacts. Copy and adapt.
 
 ---
 
+- [DSH Studio](https://github.com/Moresyl/dsh-studio) — Cross-platform desktop host for installing, running, health-checking, and supervising DeepSeek Harness locally. It makes harness lifecycle, health state, logs, and packaged releases inspectable from one local control surface, which is useful for operators who need repeatable supervision instead of ad hoc terminal processes. ![Stars](https://img.shields.io/github/stars/Moresyl/dsh-studio?style=flat-square&label=★&color=yellow)
 
+## Related Awesome Lists
 
 Lists that cover adjacent territory — overlapping but not identical scope.
 
