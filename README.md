@@ -529,6 +529,7 @@ Real repositories worth studying — each with a note on *why* it's worth your t
 - [RAMPART](https://github.com/microsoft/RAMPART) — Pytest-native safety and security testing framework for agentic AI that turns red-team findings into repeatable CI tests. Supports statistical trials (e.g., "safe in 95% of runs") rather than single-shot pass/fail, making it the first concrete tool for treating agent safety as an engineering discipline rather than a post-hoc audit. ![Stars](https://img.shields.io/github/stars/microsoft/RAMPART?style=flat-square&label=★&color=yellow)
 - [aiming-lab/AutoHarness](https://github.com/aiming-lab/AutoHarness) — Open-source Python governance harness that wraps any OpenAI-compatible client with a configurable tool-approval pipeline, prompt-injection defense, secret-exposure checks, and JSONL audit trails. Demonstrates how to productize "Agent = Model + Harness" into a drop-in governance layer rather than scattering guardrails across application code. ![Stars](https://img.shields.io/github/stars/aiming-lab/AutoHarness?style=flat-square&label=★&color=yellow)
 
+- [MandateGuard](https://github.com/ezequiellich44-cmd/MandateGuard) — Deterministic payment policy engine for AI agents: budgets, allowlists, denylists, per-window rate limits, signed Ed25519 mandates enforced before any money-moving tool executes - no LLM in the decision path. Tamper-evident SHA-256 ledger. MCP server on official registry (io.github.ezequiellich44-cmd/mandateguard). MIT licensed.
 ---
 
 ## Evals & Verification
