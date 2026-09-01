@@ -235,6 +235,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Permissions & Authorization
 
+- [AI Agent Safety Starter Pack](https://github.com/el-zachariah/ai-agent-safety-starter-pack) — Local-first preflight scanner plus handoff templates for turning repo instructions, MCP/tool configs, package scripts, workflow files, and secret-adjacent filenames into a concrete permissions/verification gate before coding agents get tool access.
 - [Beyond Permission Prompts](https://www.anthropic.com/engineering/beyond-permission-prompts) — Structured authorization patterns for agents: how to give agents the right permissions without relying on prompt-level trust.
 - [OWASP LLM06:2025 — Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) — OWASP's authoritative definition of the "excessive agency" risk: over-provisioned functions, unnecessary permissions, and missing approval mechanisms. The standard checklist for auditing harness permission scope against principle of least privilege.
 - [GitHub Enterprise — Governing Agents](https://wellarchitected.github.com/library/governance/recommendations/governing-agents/) — April 2026 GitHub official guide for enterprise agent governance: MCP server registry curation with ruleset-protected configurations, agent environment standardization via `copilot-setup-steps.yml`, ephemeral runner enforcement, and cloud-agent firewall allowlisting. The most concrete published reference for governing agent fleets at scale without creating bottlenecks.
