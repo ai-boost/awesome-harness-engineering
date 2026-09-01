@@ -45,6 +45,7 @@ This list focuses on the *harness*, not the model. Every component here exists b
   - [👁️ Observability & Tracing](#observability--tracing)
   - [🐛 Debugging & Developer Experience](#debugging--developer-experience)
   - [🧑‍💼 Human-in-the-Loop](#human-in-the-loop)
+  - [🔄 Contract Drift & Entropy Management](#contract-drift--entropy-management)
 - [🔍 Reference Implementations](#reference-implementations)
   - [🎓 Tutorials & Educational](#tutorials--educational)
   - [🏭 Generators & Meta-Harnesses](#generators--meta-harnesses)
@@ -392,6 +393,12 @@ Harness components organized by the problem they solve, not by vendor.
 - [Measuring AI Agent Autonomy in Practice](https://www.anthropic.com/news/measuring-agent-autonomy) — Anthropic's February 2026 empirical study of millions of real-world Claude Code interactions. Key finding: experienced users shift from per-action approval (20% auto-approve when new) to intervention-only oversight (40% auto-approve at 750+ sessions), and agent-initiated clarification stops grow faster than human interruptions as task complexity increases. The most data-grounded reference for designing adaptive permission models that scale with user trust.
 - [AutoResearchClaw HITL Co-Pilot](https://github.com/aiming-lab/AutoResearchClaw) — April 2026 open-source human-in-the-loop system with six intervention modes (full-auto, gate-only, checkpoint, step-by-step, co-pilot, custom), SmartPause confidence-driven dynamic suspension, and Intervention Learning from human corrections. The cost-guardrail system — aborting runs that exceed budget thresholds — makes it a practical reference for production HITL where human time is as constrained as agent compute.
 - [agent-chief](https://github.com/SmileLikeYe/agent-chief) — Local-first attention orchestration layer that sits between you and every agent, alert, and feed: a three-stage worthiness engine decides whether to interrupt the human, dispatch work to an agent, or curate to memory. Worth including because it treats human attention as a scarce harness resource and turns the flood of agent-generated notifications into a structured, reviewable HITL decision rather than a free side effect. ![Stars](https://img.shields.io/github/stars/SmileLikeYe/agent-chief?style=flat-square&label=★&color=yellow)
+
+### Contract Drift & Entropy Management
+
+Tools that detect and repair stale references when agent contracts, schemas, or prompts change — preventing silent runtime failures and documentation drift.
+
+- [Agent Contract Drift Sweeper](https://github.com/Rob-Claw/agent-contract-drift-sweeper) — Log a schema or prompt change, scan for stale references across prompts, API routes, docs, and UI, and drive a triage-ready cleanup checklist before production drifts. ![Stars](https://img.shields.io/github/stars/Rob-Claw/agent-contract-drift-sweeper?style=flat-square&label=★&color=yellow)
 
 ---
 
