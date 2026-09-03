@@ -325,6 +325,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Verification & CI Integration
 
+- [Verified Bounty Radar](https://github.com/a40014859-gif/verified-bounty-radar) — Pre-execution verification gate for coding agents pursuing GitHub bounties: canonicalizes mirror listings, checks issue state, assignees, claim signals, and open-PR competition, then emits machine-readable watch/skip decisions. Useful as a harness pattern because it moves opportunity selection from model judgment to evidence-backed checks before implementation compute is spent.
 - [Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — How to build verification into the harness loop, not just as a post-hoc eval.
 - [promptfoo](https://github.com/promptfoo/promptfoo) — YAML-driven LLM testing framework with LLM-as-judge, assertion DSL, and native CI integration. The most practical tool for adding agent output regression tests to a PR pipeline without writing a test harness from scratch. ![Stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat-square&label=★&color=yellow)
 - [AgentBench](https://github.com/THUDM/AgentBench) — Multi-environment agent benchmark (OS, DB, web, code) with a structured eval pipeline. Worth studying for its environment isolation design and task definition format when building custom eval environments for your harness. ![Stars](https://img.shields.io/github/stars/THUDM/AgentBench?style=flat-square&label=★&color=yellow)
