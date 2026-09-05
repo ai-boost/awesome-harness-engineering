@@ -580,6 +580,7 @@ Reusable starting points for harness artifacts. Copy and adapt.
 | [`templates/PLAN.md`](templates/PLAN.md) | Task planning artifact with milestones and verification gates |
 | [`templates/IMPLEMENT.md`](templates/IMPLEMENT.md) | Implementation log: decisions, deviations, open questions |
 | [`templates/HARNESS_CHECKLIST.md`](templates/HARNESS_CHECKLIST.md) | Review checklist before shipping a harness to production |
+| [`templates/HOST_DELEGATION_CHECKLIST.md`](templates/HOST_DELEGATION_CHECKLIST.md) | Review checklist for harnesses where a sandboxed agent delegates execution to a host it does not control |
 
 ---
 
