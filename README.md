@@ -326,6 +326,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Verification & CI Integration
 
+- [LintLang](https://github.com/hermes-labs-ai/lintlang) — Deterministic, local static analysis for the natural-language instructions that control AI agents. It catches ambiguous tool descriptions, missing stop conditions, schema gaps, and conflicting directives before runtime, giving harness teams a cheap verification layer before more expensive behavioral evals. ![Stars](https://img.shields.io/github/stars/hermes-labs-ai/lintlang?style=flat-square&label=★&color=yellow)
 - [Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — How to build verification into the harness loop, not just as a post-hoc eval.
 - [promptfoo](https://github.com/promptfoo/promptfoo) — YAML-driven LLM testing framework with LLM-as-judge, assertion DSL, and native CI integration. The most practical tool for adding agent output regression tests to a PR pipeline without writing a test harness from scratch. ![Stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat-square&label=★&color=yellow)
 - [AgentBench](https://github.com/THUDM/AgentBench) — Multi-environment agent benchmark (OS, DB, web, code) with a structured eval pipeline. Worth studying for its environment isolation design and task definition format when building custom eval environments for your harness. ![Stars](https://img.shields.io/github/stars/THUDM/AgentBench?style=flat-square&label=★&color=yellow)
