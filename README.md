@@ -616,6 +616,7 @@ Reusable starting points for harness artifacts. Copy and adapt.
 Lists that cover adjacent territory — overlapping but not identical scope.
 
 - [Awesome Context Engineering](https://github.com/Meirtz/Awesome-Context-Engineering) — Comprehensive survey on context engineering: prompt engineering, RAG, context window management, production AI systems.
+- [Awesome Loop Engineering](https://github.com/ChaoYue0307/awesome-loop-engineering#readme) — Curated field guide to the recurring operating layer above prompt, context, and harness engineering, with 509 audited resources, 15 loop contracts, runnable templates, and a structured dataset. Useful for turning harness primitives such as context, verification, state, permissions, and sandboxes into bounded workflows that retry, escalate, or exit.
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — Curated resources, tools, and workflows specifically for Claude Code users.
 - [awesome-mcp-servers](https://github.com/appcypher/awesome-mcp-servers) — Comprehensive list of MCP servers for extending agents with external capabilities. ![Stars](https://img.shields.io/github/stars/appcypher/awesome-mcp-servers?style=flat-square&label=★&color=yellow)
 - [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) — Curated list of AI agents and agent frameworks, organized by use case. Useful for surveying the landscape of what harnesses are being built around. ![Stars](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents?style=flat-square&label=★&color=yellow)
