@@ -235,6 +235,8 @@ Harness components organized by the problem they solve, not by vendor.
 - [wshobson/agents](https://github.com/wshobson/agents) — Cross-harness plugin marketplace that maintains one source-of-truth `plugins/` directory and generates harness-native artifacts for Claude Code, Codex CLI, Cursor, OpenCode, Gemini CLI, and GitHub Copilot. It is the clearest practical example of treating reusable agent capabilities as a portable distribution format rather than ad-hoc prompt files. ![Stars](https://img.shields.io/github/stars/wshobson/agents?style=flat-square&label=★&color=yellow)
 - [mgechev/skillgrade](https://github.com/mgechev/skillgrade) — CLI that turns agent skill verification into repeatable unit tests: it generates task and grader pairs from a `SKILL.md`, runs multi-trial evals against Claude, Codex, Gemini, or OpenCode, and reports pass rates with a CI-ready threshold. Fills the gap between shipping a skill and knowing an agent actually discovers and invokes it correctly. ![Stars](https://img.shields.io/github/stars/mgechev/skillgrade?style=flat-square&label=★&color=yellow)
 - [Qwen-MM-Plugins](https://github.com/QwenLM/Qwen-MM-Plugins) — Qwen's official multimodal plugin suite packages vision, video, document, 3D, and CAD capabilities as portable skills and MCP servers across Claude Code, Codex, OpenCode, and other harnesses. It shows how to make a text-first coding harness multimodal-native without rebuilding the agent loop. ![Stars](https://img.shields.io/github/stars/QwenLM/Qwen-MM-Plugins?style=flat-square&label=★&color=yellow)
+- [HostDeFi](https://hostdefi.com) - Agent-ready token-safety scanner with a public A2A agent card, hosted MCP server and x402-paid endpoints for autonomous checks.
+
 
 ### Permissions & Authorization
 
