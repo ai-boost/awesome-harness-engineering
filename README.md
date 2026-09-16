@@ -580,6 +580,7 @@ Real repositories worth studying — each with a note on *why* it's worth your t
 - [self-auditing-agent](https://github.com/simin-yuan/self-auditing-agent) — A public audit log of one agent's real task, built around the verification property most harnesses lack: every conclusion carries a runnable command, and the record keeps the agent's own four bugs, one false positive, and one false discovery it caught itself. A concrete reference for what "the harness must be able to publish its own failures" looks like in practice — `python repro/verify_sql_gap.py` reproduces its headline finding without starting a server.
 
 ---
+- [self-auditing-agent](https://github.com/simin-yuan/self-auditing-agent) — An agent loop whose audit log attaches a runnable command to every claim, so a third party can re-verify what the agent did without trusting it. A reference for verification-first harness design.
 
 ## Templates
 
