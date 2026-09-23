@@ -602,6 +602,7 @@ Reusable starting points for harness artifacts. Copy and adapt.
 ---
 
 ## Production Infrastructure & Operations
+- [NextReset](https://nextreset.ai/) - Independent, source-linked Codex reset history and official AI incident references, with a browser-local personal timer; no private account access or timing guarantees.
 
 - [Claude Managed Agents: Self-Hosted Sandboxes and MCP Tunnels](https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes) — Anthropic's May 2026 enterprise deployment pattern keeps the agent orchestration loop on Anthropic's infrastructure while moving tool execution into customer-controlled sandboxes; combined with [MCP tunnels](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview) for private-network tool access, it's the reference architecture for data-residency-conscious production harnesses.
 - [AgentCgroup: Understanding and Controlling OS Resources of AI Agents](https://arxiv.org/abs/2602.09345) — February 2026 empirical study of sandboxed coding-agent workloads finding that OS-level execution accounts for 56–74% of end-to-end latency and memory is the real concurrency bottleneck (15.4× peak-to-average spikes driven by tool calls). Proposes an intent-driven eBPF controller aligned with tool-call boundaries — essential for anyone running multi-tenant agent sandboxes where coarse container limits waste resources or let agents starve each other.
