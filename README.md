@@ -628,6 +628,7 @@ Reusable starting points for harness artifacts. Copy and adapt.
 - [Building Governed Agents: A Framework for Cost, Control, and Compliance](https://www.langchain.com/blog/building-governed-agents-a-framework-for-cost-control-and-compliance) — LangChain's July 2026 framework for treating the agent gateway as a runtime control plane that enforces cost, control, and compliance policies across every model call, tool call, and agent hop. A concrete reference for moving agent governance from static configuration into a harness-level enforcement layer.
 
 ---
+- [1420079678-ctrl/agent-body](https://github.com/1420079678-ctrl/agent-body) — Treats the plugin layer as an organism rather than a tool list: a variable-interval heartbeat pumps the current directives and homeostasis warnings to every plugin, reflex arcs fire on deterministic conditions with zero model calls, idle time consolidates run history into memory cards, and a failure is attributed first (missing tool / arguments / permission / timeout / network / not found / conflict) with a re-check that closes the wound only when the organ succeeds again. The transferable patterns are the harness-level ones: attribution before retry, healing as a closed loop rather than a claim, and gating tool schemas by the current intent (84.71% of tool-schema tokens gated away across 48 commands, cold-start benchmark committed in-repo; 74.25% with history). ![Stars](https://img.shields.io/github/stars/1420079678-ctrl/agent-body?style=flat-square&label=★&color=yellow)
 
 ## Related Awesome Lists
 
