@@ -260,6 +260,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Memory & State
 
+- [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness) — Developer-alpha Rust knowledge store with encrypted, append-only records and grant-scoped MCP access. A reference for separating persistent memory from caller authorization: expiring grants filter retrieval by record kind, tag, and sensitivity while agent orchestration stays in the harness.
 - [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — Covers in-context, external, and procedural memory patterns as harness-level concerns.
 - [Letta (MemGPT)](https://github.com/letta-ai/letta) — The reference architecture for stateful agents: three-tier memory (core / archival / recall) maps directly to harness state management design. Their [agent loop redesign post](https://www.letta.com/blog/letta-v1-agent) is the most thorough public analysis of how memory structure shapes the harness. ![Stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=★&color=yellow)
 - [mem0](https://github.com/mem0ai/mem0) — Drop-in universal memory layer (YC-backed, AWS Agent SDK's exclusive memory provider) that handles cross-session retention without custom harness-level state management code. Lowest integration cost for production-grade persistent memory. ![Stars](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=★&color=yellow)
