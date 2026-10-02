@@ -567,6 +567,7 @@ Real repositories worth studying — each with a note on *why* it's worth your t
 
 ---
 
+- [20131 Agent Security Runtime](https://github.com/411160007/20131-agentruntime) — Local-first, zero-dependency Go runtime that observes every agent file write, network call, shell command, and MCP tool invocation, evaluates actions against explicit policies, and keeps a replayable audit trail. Phase 0 is an observe-only v0.5.0 preview (would-block verdicts, no blocking) for Windows/macOS/Linux; enforcement and rollback are roadmap items.
 ## Evals & Verification
 
 - [Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — Anthropic's comprehensive guide to agent evaluation: trajectory evals, outcome evals, and how to build eval harnesses that are themselves reliable.
