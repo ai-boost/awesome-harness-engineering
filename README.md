@@ -576,7 +576,7 @@ Real repositories worth studying — each with a note on *why* it's worth your t
 ---
 
 ## Evals & Verification
-
+- [Nautilus Compass](https://github.com/chunxiaoxx/nautilus-compass) — Independent verification & judging service for AI-agent claims: preregistered gates, third-party recomputation with per-case evidence, and a public errata/ledger of its own published mistakes. Runs LongMemEval-based memory evals and the PRECOR study on quantization-induced judge degradation.
 - [Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — Anthropic's comprehensive guide to agent evaluation: trajectory evals, outcome evals, and how to build eval harnesses that are themselves reliable.
 - [DeepEval](https://github.com/confident-ai/deepeval) — The most complete open-source LLM/agent eval framework: 20+ built-in metrics (hallucination, answer relevancy, RAGAs, tool correctness), pytest integration, and a CI-friendly runner. Removes the need to hand-roll eval infrastructure when you need structured, repeatable agent quality gates. ![Stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=flat-square&label=★&color=yellow)
 - [Claw-Eval](https://github.com/claw-eval/claw-eval) — 300 human-verified tasks across 9 categories evaluating LLM-as-agent performance on completion, safety, and robustness with a Pass^3 methodology that requires success across three independent trials. Referenced by Meta, Kimi, Qwen, and Tencent as a trustworthy benchmark for general agentic capabilities — the most rigorous community-verified eval harness published in 2026. ![Stars](https://img.shields.io/github/stars/claw-eval/claw-eval?style=flat-square&label=★&color=yellow)
