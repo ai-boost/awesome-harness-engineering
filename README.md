@@ -532,6 +532,8 @@ Real repositories worth studying — each with a note on *why* it's worth your t
 
 ---
 
+- [wippaAGENT](https://github.com/wippa-studios/wippaAGENT) - A production harness configuration for OpenCode that operationalizes the orchestrator-delegates-to-specialists pattern: one primary agent plans and verifies, twelve specialists execute, every change passes audit and review gates. The decomposition, review discipline, and bounded verify tool generalize beyond OpenCode.
+
 ## Security, Sandbox & Permissions
 
 - [Beyond Permission Prompts](https://www.anthropic.com/engineering/beyond-permission-prompts) — The authoritative resource on moving from prompt-level permission grants to structured authorization in the harness.
