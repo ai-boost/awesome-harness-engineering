@@ -530,6 +530,7 @@ Real repositories worth studying — each with a note on *why* it's worth your t
 - [danielrosehill/AI-Harnesses](https://github.com/danielrosehill/AI-Harnesses) — April 2026 point-in-time snapshot of projects describing themselves as AI agent harnesses, organized into Resource Lists, Harness Runtimes, and Reference Implementations. Useful as a landscape survey of how the term "harness" is being applied across the ecosystem — from lightweight wrappers to full orchestration frameworks. ![Stars](https://img.shields.io/github/stars/bradAGI/awesome-cli-coding-agents?style=flat-square&label=★&color=yellow)
 - [RyanAlberts/best-of-Agent-Harnesses](https://github.com/RyanAlberts/best-of-Agent-Harnesses) — A curated, ranked list of 124 agent harnesses, rescored weekly and published as machine-readable data with an MCP server. The most practical complement for discovering and comparing harnesses, and a rare example of a list built to be consumed by agents themselves. ![Stars](https://img.shields.io/github/stars/RyanAlberts/best-of-Agent-Harnesses?style=flat-square&label=★&color=yellow)
 
+- [wippaAGENT](https://github.com/wippa-studios/wippaAGENT) — A production harness configuration for OpenCode that operationalizes the orchestrator-delegates-to-specialists pattern: one primary agent plans and verifies, twelve specialists execute, every change passes audit and review gates. The decomposition, review discipline, and bounded verify tool generalize beyond OpenCode.
 ---
 
 ## Security, Sandbox & Permissions
