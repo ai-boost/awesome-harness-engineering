@@ -186,6 +186,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Tool Design
 
+- [A failed network check is a finding, not a tool crash](https://gist.github.com/seifip/fa05e77888fc8ec0e99463084f056ae6#file-readme-md) — A worked Python adapter separates a diagnostic finding from an execution error when a CLI returns valid JSON with exit code 1. It shows how to bind target configuration outside model arguments, preserve skipped checks, and minimize returned fields, with local test results and explicit limits.
 - [Writing Effective Tools for Agents](https://www.anthropic.com/engineering/writing-tools-for-agents) — Tool naming, schema design, error messages, and return value conventions that make agents more reliable.
 - [Tool Use — Claude API Docs](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) — Authoritative reference for client vs. server tool execution models, strict schema enforcement, and tool_result error signaling. The distinction between client-side and server-side tool execution is a foundational harness architecture decision.
 - [Function Calling — OpenAI Docs](https://platform.openai.com/docs/guides/function-calling) — Defines the de facto industry-standard JSON Schema conventions for tool definitions and parallel function calling. Essential reading before designing a tool interface that needs to work across multiple models.
