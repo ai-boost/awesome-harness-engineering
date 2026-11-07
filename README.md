@@ -25,6 +25,7 @@
 
 **Harness engineering** is the discipline of designing the scaffolding — context delivery, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes — that surrounds an AI agent and determines whether it succeeds or fails on real tasks.
 
+- [MemTether](https://github.com/MemTether/MemTether) - Cross-client AI memory hub with tamper-evident evidence chain (EU AI Act Art.12), supersession chains, bi-temporal timestamps, human conflict adjudication, and 23 client adapters. 334 tests. Apache-2.0.
 This list focuses on the *harness*, not the model. Every component here exists because the model can't do it alone — and the best harnesses are designed knowing those components will become unnecessary as models improve.
 
 ---
