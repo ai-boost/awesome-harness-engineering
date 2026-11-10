@@ -613,6 +613,7 @@ Real repositories worth studying — each with a note on *why* it's worth your t
 
 ---
 
+- [20131 Agent Security Runtime](https://github.com/411160007/20131-agentruntime) — Local-first, zero-dependency Go runtime that observes every agent file write, network call, shell command, and MCP tool invocation, evaluates actions against explicit policies, and keeps a replayable audit trail. Phase 0 is an observe-only v0.5.0 preview (would-block verdicts, no blocking) for Windows/macOS/Linux; enforcement and rollback are roadmap items.
 ## Evals & Verification
 
 - [Nautilus Compass](https://github.com/chunxiaoxx/nautilus-compass) — Independent verification & judging service for AI-agent claims: preregistered gates, third-party recomputation with per-case evidence, and a public errata/ledger of its own published mistakes. Runs LongMemEval-based memory evals and the PRECOR study on quantization-induced judge degradation. ![Stars](https://img.shields.io/github/stars/chunxiaoxx/nautilus-compass?style=flat-square&label=★&color=yellow)
