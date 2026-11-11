@@ -23,6 +23,8 @@
   </p>
 </div>
 
+Claude Code skills for many of the problems below are on [agentcraft.dev](https://agentcraft.dev/en/skills/), by category, with a preview of what each does and its install command.
+
 **Harness engineering** is the discipline of designing the scaffolding — context delivery, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes — that surrounds an AI agent and determines whether it succeeds or fails on real tasks.
 
 This list focuses on the *harness*, not the model. Every component here exists because the model can't do it alone — and the best harnesses are designed knowing those components will become unnecessary as models improve.
@@ -208,6 +210,8 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Skills & MCP
 
+Agent workflow skills for Claude Code, by category with previews: [agentcraft.dev](https://agentcraft.dev/en/skills/agent/)
+
 - [Model Context Protocol](https://modelcontextprotocol.io/introduction) — Anthropic's open protocol for connecting agents to external tools, data sources, and services in a standardized way.
 - [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — Anthropic's official reference MCP server implementations (GitHub, Slack, Postgres, Puppeteer, etc.). The authoritative source for understanding correct MCP server structure before building your own. ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=★&color=yellow)
 - [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — Browser automation via accessibility tree snapshots rather than screenshots, dramatically reducing token cost. The canonical example of structured tool output design in an MCP server. ![Stars](https://img.shields.io/github/stars/microsoft/playwright-mcp?style=flat-square&label=★&color=yellow)
@@ -358,6 +362,8 @@ Harness components organized by the problem they solve, not by vendor.
 - [Orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) — Open-source desktop app (macOS, Windows, Linux, with iPhone and Android companions) where an orchestrator agent splits work across workers, each in its own git worktree, running Claude Code, Codex and 35+ other coding agents. Worth including for how it closes the verification loop: failed CI checks, review comments and merge conflicts are routed back to the worker that owns the PR, so fixes do not wait on a human relaying feedback. ![Stars](https://img.shields.io/github/stars/OrchestratorInc/agent-orchestrator?style=flat-square&label=★&color=yellow)
 
 ### Verification & CI Integration
+
+Testing and security skills for Claude Code, with previews: [agentcraft.dev](https://agentcraft.dev/en/skills/quality/)
 
 - [Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — How to build verification into the harness loop, not just as a post-hoc eval.
 - [promptfoo](https://github.com/promptfoo/promptfoo) — YAML-driven LLM testing framework with LLM-as-judge, assertion DSL, and native CI integration. The most practical tool for adding agent output regression tests to a PR pipeline without writing a test harness from scratch. ![Stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat-square&label=★&color=yellow)
@@ -658,6 +664,8 @@ Reusable starting points for harness artifacts. Copy and adapt.
 ---
 
 ## Production Infrastructure & Operations
+
+DevOps skills for Claude Code, with previews: [agentcraft.dev](https://agentcraft.dev/en/skills/devops/)
 
 - [Claude Managed Agents: Self-Hosted Sandboxes and MCP Tunnels](https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes) — Anthropic's May 2026 enterprise deployment pattern keeps the agent orchestration loop on Anthropic's infrastructure while moving tool execution into customer-controlled sandboxes; combined with [MCP tunnels](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview) for private-network tool access, it's the reference architecture for data-residency-conscious production harnesses.
 - [AgentCgroup: Understanding and Controlling OS Resources of AI Agents](https://arxiv.org/abs/2602.09345) — February 2026 empirical study of sandboxed coding-agent workloads finding that OS-level execution accounts for 56–74% of end-to-end latency and memory is the real concurrency bottleneck (15.4× peak-to-average spikes driven by tool calls). Proposes an intent-driven eBPF controller aligned with tool-call boundaries — essential for anyone running multi-tenant agent sandboxes where coarse container limits waste resources or let agents starve each other.
