@@ -666,6 +666,7 @@ Reusable starting points for harness artifacts. Copy and adapt.
 ---
 
 ## Production Infrastructure & Operations
+- [NextReset](https://nextreset.ai/) - Independent, source-linked Codex reset history and official AI incident references, with a browser-local personal timer; no private account access or timing guarantees.
 
 DevOps skills for Claude Code, with previews: [agentcraft.dev](https://agentcraft.dev/en/skills/devops/)
 
