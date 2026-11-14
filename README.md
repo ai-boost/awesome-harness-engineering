@@ -10,6 +10,7 @@
     <a href="https://github.com/ai-boost/awesome-harness-engineering/commits/main"><img src="https://img.shields.io/github/last-commit/ai-boost/awesome-harness-engineering" alt="Last Commit"></a>
     <a href="https://linux.do"><img src="https://img.shields.io/badge/Join-linux.do-orange" alt="linux.do"></a>
   </p>
+  <p><b><a href="mailto:noahbenjamin1994@gmail.com?subject=Sponsorship%3A%20awesome-harness-engineering">Sponsor this list</a></b> · Your logo and one line at the top of this README. From $300/month, open to discussion.</p>
   <p>
     <a href="https://zdoc.app/de/ai-boost/awesome-harness-engineering">Deutsch</a> |
     <a href="https://zdoc.app/en/ai-boost/awesome-harness-engineering">English</a> |
