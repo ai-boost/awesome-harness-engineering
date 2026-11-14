@@ -9,7 +9,7 @@
     <a href="https://github.com/ai-boost/awesome-harness-engineering/network/members"><img src="https://img.shields.io/github/forks/ai-boost/awesome-harness-engineering?style=social" alt="GitHub Forks"></a>
     <a href="https://github.com/ai-boost/awesome-harness-engineering/commits/main"><img src="https://img.shields.io/github/last-commit/ai-boost/awesome-harness-engineering" alt="Last Commit"></a>
     <a href="https://linux.do"><img src="https://img.shields.io/badge/Join-linux.do-orange" alt="linux.do"></a>
-    <a href="mailto:noahbenjamin1994@gmail.com?subject=Sponsorship%3A%20awesome-harness-engineering">Sponsor</a>
+    <a href="mailto:noahbenjamin1994@gmail.com?subject=Sponsorship%3A%20awesome-harness-engineering"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white" alt="Sponsor"></a>
   </p>
   <p>
     <a href="https://zdoc.app/de/ai-boost/awesome-harness-engineering">Deutsch</a> |
