@@ -214,6 +214,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 ### Skills & MCP
 
+- **[No Stairs Please MCP](https://github.com/ratacat/nostairsplease-mcp)** - Public remote MCP server (`https://nostairsplease.com/mcp`) with `SKILL.md` and `server-card.json` for discovering independent live-music venues across all 50 US states, DC, and British Columbia.
 Agent workflow skills for Claude Code, by category with previews: [agentcraft.dev](https://agentcraft.dev/en/skills/agent/)
 
 - [Model Context Protocol](https://modelcontextprotocol.io/introduction) — Anthropic's open protocol for connecting agents to external tools, data sources, and services in a standardized way.
