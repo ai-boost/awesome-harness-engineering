@@ -19,12 +19,19 @@ import re
 import asyncio
 import aiohttp
 import argparse
+import sys
 import time
 import json
 from pathlib import Path
 from typing import List, Dict, Tuple, Optional
 from dataclasses import dataclass
 from enum import Enum
+
+# The progress symbols below (✓ → ⏱ ⚠) are not representable in the default
+# Windows console encoding (cp1252); replace unencodable characters instead
+# of crashing with UnicodeEncodeError mid-run.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
 
 
 class URLStatus(Enum):
