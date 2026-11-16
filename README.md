@@ -48,6 +48,7 @@ This list focuses on the *harness*, not the model. Every component here exists b
   - [👁️ Observability & Tracing](#observability--tracing)
   - [🐛 Debugging & Developer Experience](#debugging--developer-experience)
   - [🧑‍💼 Human-in-the-Loop](#human-in-the-loop)
+  - [🔄 Contract Drift & Entropy Management](#contract-drift--entropy-management)
 - [🔍 Reference Implementations](#reference-implementations)
   - [🎓 Tutorials & Educational](#tutorials--educational)
   - [🏭 Generators & Meta-Harnesses](#generators--meta-harnesses)
@@ -454,6 +455,12 @@ Testing and security skills for Claude Code, with previews: [agentcraft.dev](htt
 - [agent-chief](https://github.com/SmileLikeYe/agent-chief) — Local-first attention orchestration layer that sits between you and every agent, alert, and feed: a three-stage worthiness engine decides whether to interrupt the human, dispatch work to an agent, or curate to memory. Worth including because it treats human attention as a scarce harness resource and turns the flood of agent-generated notifications into a structured, reviewable HITL decision rather than a free side effect. ![Stars](https://img.shields.io/github/stars/SmileLikeYe/agent-chief?style=flat-square&label=★&color=yellow)
 - [Happier](https://github.com/happier-dev/happier) — Open-source, end-to-end encrypted app that moves the human gate to your phone: tool approvals and permission prompts from Claude Code, Codex, OpenCode, Gemini CLI and other coding agents running on your own machines can be answered from desktop, phone or web. A practical reference for remote, cross-device approval of agent actions. ![Stars](https://img.shields.io/github/stars/happier-dev/happier?style=flat-square&label=★&color=yellow)
 - [Muxflow](https://github.com/gal064/muxflow) — Remote-first tmux IDE for coding agents. Agent notifications on desktop and phone plus voice replies let a human answer a waiting agent away from the machine, while the session keeps running in tmux over SSH. ![Stars](https://img.shields.io/github/stars/gal064/muxflow?style=flat-square&label=%E2%98%85&color=yellow)
+
+### Contract Drift & Entropy Management
+
+Tools that detect and repair stale references when agent contracts, schemas, or prompts change — preventing silent runtime failures and documentation drift.
+
+- [Agent Contract Drift Sweeper](https://github.com/Rob-Claw/agent-contract-drift-sweeper) — Log a schema or prompt change, scan for stale references across prompts, API routes, docs, and UI, and drive a triage-ready cleanup checklist before production drifts. ![Stars](https://img.shields.io/github/stars/Rob-Claw/agent-contract-drift-sweeper?style=flat-square&label=★&color=yellow)
 
 ---
 
