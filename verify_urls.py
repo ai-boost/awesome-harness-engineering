@@ -167,10 +167,11 @@ class URLValidator:
                 result = await coro
                 results.append(result)
                 done += 1
-                # Keep progress output compatible with the default Windows console encoding.
-                sym = {"success": "OK", "redirected": "->", "not_found": "X",
-                       "timeout": "T", "error": "!"}.get(result.status.value, "?")
-                print(f"\r[{done:3d}/{len(urls):3d}] {sym} {console_text(result.url[:70]):<70}",
+                # Symbols stay readable on UTF-8 terminals; console_text degrades them
+                # safely instead of raising on cp1252 and other limited consoles.
+                sym = {"success": "✓", "redirected": "→", "not_found": "✗",
+                       "timeout": "⏱", "error": "⚠"}.get(result.status.value, "?")
+                print(f"\r[{done:3d}/{len(urls):3d}] {console_text(sym)} {console_text(result.url[:70]):<70}",
                       end="", flush=True)
             print()
             return results
@@ -193,7 +194,7 @@ def print_summary(results: List[URLResult]):
         print("-" * 72)
         for r in problems:
             note = f"  [{r.status_code}]" if r.status_code else ""
-            msg = f"  -- {console_text(r.error_message)}" if r.error_message else ""
+            msg = f"  — {console_text(r.error_message)}" if r.error_message else ""
             print(f"{r.status.value:12} {console_text(r.url)}{note}{msg}")
 
     redirects = [r for r in results if r.status == URLStatus.REDIRECTED]
@@ -201,7 +202,7 @@ def print_summary(results: List[URLResult]):
         print(f"\nRedirected URLs ({len(redirects)}):")
         print("-" * 72)
         for r in redirects:
-            print(f"  {console_text(r.url)}\n    -> {console_text(r.final_url)}")
+            print(f"  {console_text(r.url)}\n    → {console_text(r.final_url)}")
 
 
 def save_json(results: List[URLResult], path: str):
