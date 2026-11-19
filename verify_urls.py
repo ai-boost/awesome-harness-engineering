@@ -19,12 +19,26 @@ import re
 import asyncio
 import aiohttp
 import argparse
+import sys
 import time
 import json
+import sys
 from pathlib import Path
 from typing import List, Dict, Tuple, Optional
 from dataclasses import dataclass
 from enum import Enum
+
+# The progress symbols below (✓ → ⏱ ⚠) are not representable in the default
+# Windows console encoding (cp1252); replace unencodable characters instead
+# of crashing with UnicodeEncodeError mid-run.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
+
+
+def console_text(value: object) -> str:
+    """Return text that can be printed with the active console encoding."""
+    encoding = getattr(sys.stdout, "encoding", None) or "utf-8"
+    return str(value).encode(encoding, errors="replace").decode(encoding, errors="replace")
 
 
 class URLStatus(Enum):
@@ -153,9 +167,11 @@ class URLValidator:
                 result = await coro
                 results.append(result)
                 done += 1
+                # Symbols stay readable on UTF-8 terminals; console_text degrades them
+                # safely instead of raising on cp1252 and other limited consoles.
                 sym = {"success": "✓", "redirected": "→", "not_found": "✗",
                        "timeout": "⏱", "error": "⚠"}.get(result.status.value, "?")
-                print(f"\r[{done:3d}/{len(urls):3d}] {sym} {result.url[:70]:<70}",
+                print(f"\r[{done:3d}/{len(urls):3d}] {console_text(sym)} {console_text(result.url[:70]):<70}",
                       end="", flush=True)
             print()
             return results
@@ -178,15 +194,15 @@ def print_summary(results: List[URLResult]):
         print("-" * 72)
         for r in problems:
             note = f"  [{r.status_code}]" if r.status_code else ""
-            msg = f"  — {r.error_message}" if r.error_message else ""
-            print(f"{r.status.value:12} {r.url}{note}{msg}")
+            msg = f"  — {console_text(r.error_message)}" if r.error_message else ""
+            print(f"{r.status.value:12} {console_text(r.url)}{note}{msg}")
 
     redirects = [r for r in results if r.status == URLStatus.REDIRECTED]
     if redirects:
         print(f"\nRedirected URLs ({len(redirects)}):")
         print("-" * 72)
         for r in redirects:
-            print(f"  {r.url}\n    → {r.final_url}")
+            print(f"  {console_text(r.url)}\n    → {console_text(r.final_url)}")
 
 
 def save_json(results: List[URLResult], path: str):
