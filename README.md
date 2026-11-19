@@ -685,6 +685,7 @@ Reusable starting points for harness artifacts. Copy and adapt.
 
 ## Production Infrastructure & Operations
 
+- [Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report](https://arxiv.org/abs/2608.15763) — Studies how domain training can overfit an agent to its current skills, tools, prompts, and hooks, and how training across harness variations improves adaptation to later edits. Useful for teams that need to keep a compact production agent responsive to runtime changes; includes a Taobao Live deployment study.
 DevOps skills for Claude Code, with previews: [agentcraft.dev](https://agentcraft.dev/en/skills/devops/)
 
 - [Claude Managed Agents: Self-Hosted Sandboxes and MCP Tunnels](https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes) — Anthropic's May 2026 enterprise deployment pattern keeps the agent orchestration loop on Anthropic's infrastructure while moving tool execution into customer-controlled sandboxes; combined with [MCP tunnels](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview) for private-network tool access, it's the reference architecture for data-residency-conscious production harnesses.
