@@ -753,3 +753,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Acknowledgments
 
 Thanks to [linux.do](https://linux.do) — a vibrant tech community where many harness engineering ideas were discussed and refined.
+
+| [alpha_syndicate x402 Gateway](https://pfq-opencode-wr96rj6p4xwwh59v-8001.app.github.dev/.well-known/x402.json) | 11 pay-per-call USDC endpoints for AI agents | Remote |
