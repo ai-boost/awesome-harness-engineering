@@ -220,6 +220,7 @@ Harness components organized by the problem they solve, not by vendor.
 
 Agent workflow skills for Claude Code, by category with previews: [agentcraft.dev](https://agentcraft.dev/en/skills/agent/)
 
+- [MCP Production Kit](https://github.com/A7mdMe/mcp-production-kit) — Type-safe TypeScript boilerplate, production security guards, and the zero-dependency MCP Doctor diagnostic linter for Model Context Protocol servers. ![Stars](https://img.shields.io/github/stars/A7mdMe/mcp-production-kit?style=flat-square&label=★&color=yellow)
 - [Model Context Protocol](https://modelcontextprotocol.io/introduction) — Anthropic's open protocol for connecting agents to external tools, data sources, and services in a standardized way.
 - [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — Anthropic's official reference MCP server implementations (GitHub, Slack, Postgres, Puppeteer, etc.). The authoritative source for understanding correct MCP server structure before building your own. ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=★&color=yellow)
 - [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — Browser automation via accessibility tree snapshots rather than screenshots, dramatically reducing token cost. The canonical example of structured tool output design in an MCP server. ![Stars](https://img.shields.io/github/stars/microsoft/playwright-mcp?style=flat-square&label=★&color=yellow)
